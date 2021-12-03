@@ -37,6 +37,5 @@ const getLifeSupportRating = (values) => {
 fs.readFile('./input.txt', 'UTF-8', (err, data) => {
     if(err) return console.error(err);
 
-    const result = getLifeSupportRating(data.split("\n"));
-    console.log(result);
+    console.log('Part 2: ', getLifeSupportRating(data.split("\n")));
 })
